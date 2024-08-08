@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nokia3310-SnakeGame</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas width="500" height="500" id="canvas"></canvas>
+
+
+<dialog id="modal-end" class="modal">
+    <div class="modal-header">
+        <h1>Game End!!!</h1>
+        <h2 class="mb-1">Your Score: <span id="score"></span></h2>
+    </div>
+
+    <div class="modal-body">
+        <p class="mb-1">Do You Want To Save The Score??</p>
+        <div class="btn-group">
+            <button id="btn-yes">Yes</button>
+            <button id="btn-no">No</button>
+        </div>
+
+    </div>
+</dialog>
+
+<dialog class="modal" id="modal-form">
+    <form action="#" method="post" id="form-score">
+        <div class="mb-1">
+            <div>Name: </div>
+            <input type="text" name="name" id="name" class="form-control" required>
+        </div>
+        <button type="submit">Submit Score</button>
+    </form>
+</dialog>
+
+
+<dialog class="modal" id="modal-replay">
+    <div class="mb-1" id="message-success">
+
+    </div>
+    <button type="submit" id="btn-play">Play Again ? </button>
+</dialog>
+<script src="app.js"></script>
+</body>
+</html>
